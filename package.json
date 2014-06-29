@@ -30,5 +30,13 @@
   },
   "devDependencies": {
     "tape": "^2.13.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brycebaril/console.yo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brycebaril/console.yo/issues"
+  },
+  "homepage": "https://github.com/brycebaril/console.yo"
 }
