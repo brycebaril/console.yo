@@ -1,6 +1,6 @@
 {
   "name": "console.yo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Yos from yo apps. console.yo",
   "main": "console_yo.js",
   "directories": {
