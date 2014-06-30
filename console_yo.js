@@ -28,7 +28,8 @@ function yoify(target, prefix, cb) {
     callback("no yo for you. ¯\\_(ツ)_/¯")
   }
 
-  yoplait.newUser(from, yoplait.genUdid(), function(err, yoUser) {
+  var udid = yoplait.genUdid()
+  yoplait.signUp(from, udid, udid, function(err, yoUser) {
     if (err) {
       console.yo = noyo
       return cb(new Error("Failed to setup yo user"))

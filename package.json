@@ -26,7 +26,7 @@
   "author": "Bryce B. Baril",
   "license": "MIT",
   "dependencies": {
-    "yoplait": "^0.3.0"
+    "yoplait": "^0.4.3"
   },
   "devDependencies": {
     "tape": "^2.13.3"
