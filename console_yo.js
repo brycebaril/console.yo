@@ -23,7 +23,7 @@ function yoify(target, prefix, cb) {
   from = from.substr(0, 42)
   target = target.toUpperCase()
 
-  function noyo(callback) {
+  var noyo = function (callback) {
     console.log("noyo", target)
     callback("no yo for you. ¯\\_(ツ)_/¯")
   }
@@ -35,6 +35,9 @@ function yoify(target, prefix, cb) {
     }
 
     console.yo = function (callback) {
+      if (callback == null) {
+        callback = function () {}
+      }
       yoUser.sendYo(target, function (err) {
         if (err) {
           console.yo = noyo
